@@ -1,0 +1,18 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  align-self: center;
+}
+.text {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 0.88rem;
+}

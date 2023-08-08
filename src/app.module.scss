@@ -1,0 +1,143 @@
+@import "reset.module";
+
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap");
+
+$main-beige: #f7ede8;
+$accent-red: #e3a2a2;
+$accent-grey: #e5e4e4;
+$text-grey: #949191;
+
+@font-face {
+  font-family: "Arsinova Deco";
+  src: url("./fonts/ArsinovaDeco.ttf");
+}
+
+html {
+  font-family: "Golos Text", sans-serif;
+  font-size: 18px;
+  background-color: $main-beige;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.container {
+  max-width: 1145px + 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.content {
+  display: flex;
+  justify-content: flex-end;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 35vw;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  padding: 0 10%;
+  transform: translate(0, -50%);
+}
+
+.info {
+  margin-bottom: 60px;
+}
+
+.logo {
+  background-color: $accent-red;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border-top-left-radius: 0;
+  position: relative;
+  margin-bottom: 30px;
+  &::after {
+    content: "захар кудрявцев";
+    font-size: 2.8rem;
+    font-family: "Arsinova Deco", sans-serif;
+    letter-spacing: 5px;
+    line-height: 100%;
+    position: absolute;
+    top: 22%;
+    left: 20%;
+  }
+  &:hover {
+    &::after {
+      content: "захар кудрявце";
+      font-size: 2.8rem;
+      font-family: "Arsinova Deco", sans-serif;
+      letter-spacing: 5px;
+      line-height: 100%;
+      position: absolute;
+      top: 22%;
+      left: 20%;
+    }
+    &::before {
+      content: "в";
+      font-size: 50px;
+      font-family: "Arsinova Deco";
+      letter-spacing: 5px;
+      line-height: 100%;
+      position: absolute;
+      top: 60%;
+      right: -32%;
+      transition: all;
+    }
+  }
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.description {
+  font-size: 1rem;
+  max-width: 400px;
+  color: $text-grey;
+}
+
+.menu {
+  li {
+    margin-bottom: 10px;
+    font-size: 0.88rem;
+  }
+  a {
+    color: $text-grey;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-left: 70px;
+    transition: all 0.3s;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 60px;
+      height: 1px;
+      background-color: $text-grey;
+      transition: all 0.3s;
+    }
+  }
+  a:hover {
+    color: black;
+    cursor: pointer;
+    padding-left: 80px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 70px;
+      height: 1px;
+      background-color: black;
+    }
+  }
+}
