@@ -1,13 +1,25 @@
-.aboutContainer {
+@import "styles/vars.module.scss";
+
+.container {
   display: flex;
   flex-direction: column;
 }
 .avatar {
+  display: flex;
   width: 200px;
   height: 200px;
-  background-color: red;
+  background-color: $accent-red;
   border-radius: 50%;
   align-self: center;
+  padding: 10px;
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url("../../assets/img/avatar.jpg") 0 0 no-repeat;
+  }
 }
 .text {
   margin-top: 40px;

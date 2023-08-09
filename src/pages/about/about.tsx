@@ -2,9 +2,9 @@ import styles from "./about.module.scss";
 
 export default function About() {
   return (
-    <section className={styles.aboutContainer}>
+    <section className={styles.container}>
       <div className={styles.avatar}>
-        <img src=""></img>
+        <div className={styles.avatar__img}></div>
       </div>
       <div className={styles.text}>
         <p>
