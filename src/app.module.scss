@@ -1,6 +1,10 @@
 @import "reset.module";
 
-@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&display=swap");
 
 $main-beige: #f7ede8;
 $accent-red: #e3a2a2;
@@ -13,9 +17,14 @@ $text-grey: #949191;
 }
 
 html {
-  font-family: "Golos Text", sans-serif;
   font-size: 18px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
   background-color: $main-beige;
+  font-weight: 300;
+  line-height: 130%;
 }
 
 .wrapper {
@@ -47,6 +56,9 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  &__title:hover &__title::first-letter {
+    color: $accent-red;
   }
   & > .page__title {
     min-height: 150vh;

@@ -1,0 +1,77 @@
+@import "styles/vars.module.scss";
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 300px;
+  font-size: 1rem;
+  height: 80vh;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 60px;
+  color: $text-grey;
+  & a {
+    color: black;
+  }
+}
+
+.email {
+  margin-top: 60px;
+  color: black;
+}
+.textMeBtn {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $text-grey;
+  margin-top: 15px;
+  padding-right: 20px;
+  width: 300px;
+  & span {
+    width: 200px;
+    height: 1px;
+    background-color: $text-grey;
+    position: relative;
+    transition: all 3s;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      right: 0;
+      height: 1px;
+      width: 8px;
+      background-color: $text-grey;
+      transform: rotate(45deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      right: 0;
+      height: 1px;
+      width: 8px;
+      background-color: $text-grey;
+      transform: rotate(-45deg);
+    }
+  }
+  &:hover {
+    width: 300px;
+    color: black;
+  }
+}
+
+.description {
+  padding: 30px;
+  border-radius: $border-radius;
+  background-color: $accent-red;
+  max-width: 300px;
+  line-height: 130%;
+}

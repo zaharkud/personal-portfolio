@@ -8,28 +8,26 @@ export default function About() {
       </div>
       <div className={styles.text}>
         <p>
-          Back in 2012, I decided to try my hand at creating custom Tumblr
-          themes and tumbled head first into the rabbit hole of coding and web
-          development. Fast-forward to today, and I’ve had the privilege of
-          building software for an advertising agency, a start-up, a student-led
-          design studio, and a huge corporation.
+          В настоящее время веб-типографика находится на пике бесконечной
+          креативности: сервис Google Fonts зарекомендовал себя как бесценный
+          ресурс для диджитал-дизайнеров. Свободный доступ к этим шрифтам делает
+          их отличным вариантом как для коммерческого, так и для личного
+          использования
         </p>
         <p>
-          My main focus these days is building products and leading projects for
-          our clients at Upstatement. In my free time I've also released an
-          online video course that covers everything you need to know to build a
-          web app with the Spotify API.
+          зарекомендовал себя как бесценный ресурс для диджитал-дизайнеров.
+          Свободный доступ к этим шрифтам делает их отличным вариантом как для
+          коммерческого, так и для личного использованиязарекомендовал себя как
+          бесценный ресурс для диджитал-дизайнеров. Свободный доступ к этим
+          шрифтам делает их отличным вариантом как для коммерческого, так и для
+          личного использованиязарекомендовал себя как бесценный ресурс для
+          диджитал-дизайнеров. Свободный доступ к этим шрифтам делает их
+          отличным вариантом как для коммерческого, так и для личного
+          использования
         </p>
         <p>
-          When I’m not at the computer, I’m usually rock climbing, hanging out
-          with my wife and two cats, or running around Hyrule searching for
-          Korok seedsKorok seeds.
-        </p>
-        <p>
-          My main focus these days is building products and leading projects for
-          our clients at Upstatement. In my free time I've also released an
-          online video course that covers everything you need to know to build a
-          web app with the Spotify API.
+          веб-типографика находится на пике бесконечной креативности: сервис
+          Google Fonts зарекомендовал
         </p>
       </div>
     </section>

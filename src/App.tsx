@@ -4,6 +4,7 @@ import styles from "app.module.scss";
 import About from "pages/about/About";
 import Skills from "pages/skills/Skills";
 import Projects from "pages/projects/Projects";
+import Contacts from "pages/contacts/Contacts";
 import { useRef, useEffect, useState } from "react";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
               <h2 className={styles.page__title}>Портфолио</h2>
               <Projects />
               <h2 className={styles.page__title}>Контакты</h2>
+              <Contacts />
             </section>
           </div>
         </div>
