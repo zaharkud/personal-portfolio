@@ -5,15 +5,26 @@ import About from "pages/about/About";
 import Skills from "pages/skills/Skills";
 import Projects from "pages/projects/Projects";
 import Contacts from "pages/contacts/Contacts";
+import Project_01 from "pages/project_01/Project_01";
 import { useRef, useEffect, useState } from "react";
 
 function App() {
   const sidebar = useRef<HTMLElement>(null);
+
+  const aboutSection = useRef<HTMLHeadingElement>(null);
+  const skillsSection = useRef<HTMLHeadingElement>(null);
+  const projectsSection = useRef<HTMLHeadingElement>(null);
+  const contactsSection = useRef<HTMLHeadingElement>(null);
+
   const [pageOffset, setPageOffset] = useState<number>();
 
   useEffect(() => {
     setPageOffset(sidebar.current?.getBoundingClientRect().top);
   }, [sidebar]);
+
+  function handleMenuClick(section: any): void {
+    section.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
 
   return (
     <div className="App">
@@ -32,28 +43,41 @@ function App() {
               <nav>
                 <ul className={styles.menu}>
                   <li>
-                    <a>Обо мне</a>
+                    <a onClick={() => handleMenuClick(aboutSection)}>Обо мне</a>
                   </li>
                   <li>
-                    <a>Навыки</a>
+                    <a onClick={() => handleMenuClick(skillsSection)}>Навыки</a>
                   </li>
                   <li>
-                    <a>Проекты</a>
+                    <a onClick={() => handleMenuClick(projectsSection)}>
+                      Проекты
+                    </a>
                   </li>
                   <li>
-                    <a>Контакты</a>
+                    <a onClick={() => handleMenuClick(contactsSection)}>
+                      Контакты
+                    </a>
                   </li>
                 </ul>
               </nav>
             </section>
             <section className={styles.page} style={{ marginTop: pageOffset }}>
+              <h2 ref={aboutSection} style={{ fontSize: 0 }}></h2>
               <About />
-              <h2 className={styles.page__title}>Навыки & технологии</h2>
+              <h2 className={styles.page__title} ref={skillsSection}>
+                Навыки & технологии
+              </h2>
               <Skills />
-              <h2 className={styles.page__title}>Портфолио</h2>
+              <h2 className={styles.page__title} ref={projectsSection}>
+                Портфолио
+              </h2>
               <Projects />
-              <h2 className={styles.page__title}>Контакты</h2>
+              <h2 className={styles.page__title} ref={contactsSection}>
+                Контакты
+              </h2>
               <Contacts />
+              <h2 ref={contactsSection} style={{ fontSize: 0 }}></h2>
+              <Project_01 />
             </section>
           </div>
         </div>

@@ -14,6 +14,11 @@ export default function Skills() {
           </div>
         </div>
         <div className={styles.project__bottom}>
+          <div className={styles.techStack}>
+            <article className={styles.techStack__item}>React</article>
+            <article className={styles.techStack__item}>HTML</article>
+            <article className={styles.techStack__item}>SASS</article>
+          </div>
           <h3 className={styles.title}>ARLEZU - Изучение армянского</h3>
           <p className={styles.description}>
             Начинающий веб-разработчик. Владею навыками проектирования
@@ -31,11 +36,18 @@ export default function Skills() {
           </div>
         </div>
         <div className={styles.project__bottom}>
-          <h3 className={styles.title}>ARLEZU - Изучение армянского</h3>
-          <p className={styles.description}>
-            Начинающий веб-разработчик. Владею навыками проектирования
-            интерфейсов, вёрстки и работы с backend.
-          </p>
+          <div className={styles.techStack}>
+            <article className={styles.techStack__item}>React</article>
+            <article className={styles.techStack__item}>HTML</article>
+            <article className={styles.techStack__item}>SASS</article>
+          </div>
+          <div className={styles.project__content}>
+            <h3 className={styles.title}>ARLEZU - Изучение армянского</h3>
+            <p className={styles.description}>
+              Начинающий веб-разработчик. Владею навыками проектирования
+              интерфейсов, вёрстки и работы с backend.
+            </p>
+          </div>
         </div>
       </article>
     </section>

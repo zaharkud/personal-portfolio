@@ -6,12 +6,12 @@ export default function Contacts() {
   return (
     <section className={styles.container}>
       <p className={styles.description}>
-        Давайте вместе сделаем что-нибудь интересное ^-^
+        Давайте вместе сделаем что-нибудь интересное. Просто напишите мне ^-^
       </p>
       <a className={styles.email} href="email:zaharkud162@gmail.com">
         zaharkud162@gmail.com
       </a>
-      <a className={styles.textMeBtn}>
+      <a className={styles.btnRight}>
         написать<span></span>
       </a>
       <div className={styles.social}>

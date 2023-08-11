@@ -4,3 +4,97 @@ $accent-grey: #e5e4e4;
 $text-grey: #949191;
 
 $border-radius: 25px;
+
+@mixin arrowheadCreate($color, $deg, $offset, $headPosition) {
+  position: absolute;
+  top: $offset;
+  left: $headPosition;
+  height: 1px;
+  width: 8px;
+  background-color: $color;
+  transform: rotate($deg);
+}
+
+.btnRight {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  color: $text-grey;
+  padding-right: 20px;
+  line-height: 150%;
+  cursor: pointer;
+  & span {
+    flex: 0 0 37%;
+    height: 1px;
+    background-color: $text-grey;
+    position: relative;
+    transition: flex 0.3s;
+    &::after {
+      content: "";
+      @include arrowheadCreate($text-grey, -45deg, 3px, 100%);
+    }
+    &::before {
+      content: "";
+      @include arrowheadCreate($text-grey, 45deg, -3px, 100%);
+    }
+  }
+  &:hover {
+    color: black;
+    span {
+      flex: 0 0 47%;
+      background-color: black;
+    }
+    span::after {
+      content: "";
+      @include arrowheadCreate(black, -45deg, 3px, 100%);
+    }
+    span::before {
+      content: "";
+      @include arrowheadCreate(black, 45deg, -3px, 100%);
+    }
+  }
+}
+
+.btnLeft {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  color: $text-grey;
+  padding-right: 20px;
+  line-height: 150%;
+  cursor: pointer;
+  & span {
+    flex: 0 0 37%;
+    height: 1px;
+    background-color: $text-grey;
+    position: relative;
+    transition: flex 0.3s;
+    &::after {
+      content: "";
+      @include arrowheadCreate($text-grey, 45deg, 3px, 0);
+    }
+    &::before {
+      content: "";
+      @include arrowheadCreate($text-grey, -45deg, -3px, 0);
+    }
+  }
+  &:hover {
+    color: black;
+    span {
+      flex: 0 0 47%;
+      background-color: black;
+    }
+    span::after {
+      content: "";
+      @include arrowheadCreate(black, 45deg, 3px, 0);
+    }
+    span::before {
+      content: "";
+      @include arrowheadCreate(black, -45deg, -3px, 0);
+    }
+  }
+}
