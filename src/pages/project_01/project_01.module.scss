@@ -36,7 +36,32 @@
   font-family: "Arsinova Deco", sans-serif;
   letter-spacing: 5px;
   line-height: 100%;
-  margin-bottom: 30px;
   margin-top: 0;
+  margin-bottom: 30px;
   text-transform: lowercase;
+}
+.container {
+  max-width: 35vw;
+}
+
+.social {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.social > * {
+  padding-left: 35px;
+  display: flex;
+  color: black;
+  transition: all 0.3s;
+  &:hover {
+    color: black;
+  }
+}
+.github {
+  background: url("../../assets/img/social/github.svg") 0 0/22px 22px no-repeat;
+}
+.web {
+  background: url("../../assets/img/social/web.svg") 0 0/22px 22px no-repeat;
 }

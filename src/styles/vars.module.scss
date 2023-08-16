@@ -5,14 +5,14 @@ $text-grey: #949191;
 
 $border-radius: 25px;
 
-@mixin arrowheadCreate($color, $deg, $offset, $headPosition) {
+@mixin arrowheadCreate($color, $deg, $offset, $headPosition, $translateX) {
   position: absolute;
   top: $offset;
   left: $headPosition;
   height: 1px;
   width: 8px;
   background-color: $color;
-  transform: rotate($deg);
+  transform: translateX($translateX) rotate($deg);
 }
 
 .btnRight {
@@ -33,11 +33,11 @@ $border-radius: 25px;
     transition: flex 0.3s;
     &::after {
       content: "";
-      @include arrowheadCreate($text-grey, -45deg, 3px, 100%);
+      @include arrowheadCreate($text-grey, -45deg, 3px, 100%, -7px);
     }
     &::before {
       content: "";
-      @include arrowheadCreate($text-grey, 45deg, -3px, 100%);
+      @include arrowheadCreate($text-grey, 45deg, -3px, 100%, -7px);
     }
   }
   &:hover {
@@ -48,11 +48,11 @@ $border-radius: 25px;
     }
     span::after {
       content: "";
-      @include arrowheadCreate(black, -45deg, 3px, 100%);
+      @include arrowheadCreate(black, -45deg, 3px, 100%, -7px);
     }
     span::before {
       content: "";
-      @include arrowheadCreate(black, 45deg, -3px, 100%);
+      @include arrowheadCreate(black, 45deg, -3px, 100%, -7px);
     }
   }
 }
@@ -75,11 +75,11 @@ $border-radius: 25px;
     transition: flex 0.3s;
     &::after {
       content: "";
-      @include arrowheadCreate($text-grey, 45deg, 3px, 0);
+      @include arrowheadCreate($text-grey, 45deg, 3px, 0, 0);
     }
     &::before {
       content: "";
-      @include arrowheadCreate($text-grey, -45deg, -3px, 0);
+      @include arrowheadCreate($text-grey, -45deg, -3px, 0, 0);
     }
   }
   &:hover {
@@ -90,11 +90,11 @@ $border-radius: 25px;
     }
     span::after {
       content: "";
-      @include arrowheadCreate(black, 45deg, 3px, 0);
+      @include arrowheadCreate(black, 45deg, 3px, 0, 0);
     }
     span::before {
       content: "";
-      @include arrowheadCreate(black, -45deg, -3px, 0);
+      @include arrowheadCreate(black, -45deg, -3px, 0, 0);
     }
   }
 }

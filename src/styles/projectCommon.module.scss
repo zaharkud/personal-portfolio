@@ -21,6 +21,7 @@
     grid-auto-rows: auto;
   }
   &__topLeft {
+    margin-left: -60px;
   }
   &__topRight {
     display: flex;
@@ -40,8 +41,8 @@
 }
 
 .title {
-  margin-top: 25px;
   font-size: 1.11rem;
+  margin-top: 25px;
 }
 .description {
   margin-top: 10px;

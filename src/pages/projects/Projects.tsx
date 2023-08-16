@@ -1,5 +1,6 @@
 import styles from "./projects.module.scss";
 import projectImg from "assets/img/project-1.png";
+import { Link } from "react-router-dom";
 
 export default function Skills() {
   return (
@@ -19,7 +20,9 @@ export default function Skills() {
             <article className={styles.techStack__item}>HTML</article>
             <article className={styles.techStack__item}>SASS</article>
           </div>
-          <h3 className={styles.title}>ARLEZU - Изучение армянского</h3>
+          <Link to="/project_01" preventScrollReset={true}>
+            <h3 className={styles.title}>ARLEZU - Изучение армянского</h3>
+          </Link>
           <p className={styles.description}>
             Начинающий веб-разработчик. Владею навыками проектирования
             интерфейсов, вёрстки и работы с backend.

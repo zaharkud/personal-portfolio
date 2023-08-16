@@ -57,9 +57,6 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-  &__title:hover &__title::first-letter {
-    color: $accent-red;
-  }
   & > .page__title {
     min-height: 150vh;
   }
