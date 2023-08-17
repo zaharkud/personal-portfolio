@@ -1,7 +1,6 @@
 import styles from "./project_01.module.scss";
-import projectImg from "assets/img/project-1.png";
-import githubImg from "assets/img/social/github.svg";
-import webImg from "assets/img/social/web.svg";
+import projectImgMockup from "assets/img/projects/project__01-01.png";
+import projectImgSnapshot_01 from "assets/img/projects/project__01-02.jpg";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -20,14 +19,14 @@ export default function Project_01() {
           <a onClick={goBack} className={styles.btnLeft}>
             <span></span>назад
           </a>
-          <p className={styles.projectInfo}>2023</p>
+          <p className={styles.projectInfo}>Проект 01 / 2023</p>
         </div>
         <div className={styles.project__top}>
           <div className={styles.project__topLeft}>
-            <img className={styles.img} src={projectImg} />
+            <img className={styles.img} src={projectImgMockup} />
           </div>
           <div className={styles.project__topRight}>
-            <img className={styles.img} src={projectImg} />
+            <img className={styles.img} src={projectImgSnapshot_01} />
           </div>
         </div>
         <div className={styles.project__bottom}>
@@ -41,7 +40,7 @@ export default function Project_01() {
               Начинающий веб-разработчик. Владею навыками проектирования
               интерфейсов, вёрстки и работы с backend.
             </p>
-            <img className={styles.img} src={projectImg} />
+            <img className={styles.img} src={projectImgSnapshot_01} />
             <p className={styles.description}>
               Начинающий веб-разработчик. Владею навыкам-Mи проектирования
               интерфейсов, вёрстки и работы с backend.

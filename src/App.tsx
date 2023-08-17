@@ -3,7 +3,8 @@ import styles from "app.module.scss";
 import Project_01 from "pages/project_01/Project_01";
 import Main from "pages/main/Main";
 import { useRef, useEffect, useState } from "react";
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Sidebar from "components/Sidebar";
 
 function App() {
   const sidebar = useRef<HTMLElement>(null);
@@ -76,55 +77,15 @@ function App() {
           <div className={styles.container}>
             <div className={styles.content}>
               <section className={styles.sidebar} ref={sidebar}>
-                <section className={styles.info}>
-                  <div className={styles.logo}></div>
-                  <h2 className={styles.title}>Junior Frontend Developer</h2>
-                  <p className={styles.description}>
-                    Начинающий веб-разработчик. Владею навыками проектирования
-                    интерфейсов, вёрстки и работы с backend.
-                  </p>
-                </section>
-                <nav>
-                  <ul className={styles.menu}>
-                    <li>
-                      <Link
-                        to="/"
-                        state={{ scrollTo: "aboutSection" }}
-                        onClick={() => handleMenuClick(aboutSection)}
-                      >
-                        Обо мне
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/"
-                        state={{ scrollTo: "skillsSection" }}
-                        onClick={() => handleMenuClick(skillsSection)}
-                      >
-                        Навыки
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/"
-                        state={{ scrollTo: "projectsSection" }}
-                        onClick={() => handleMenuClick(projectsSection)}
-                      >
-                        Проекты
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/"
-                        state={{ scrollTo: "contactsSection" }}
-                        onClick={() => handleMenuClick(contactsSection)}
-                      >
-                        Контакты
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
+                <Sidebar
+                  handleMenuClick={handleMenuClick}
+                  aboutSection={aboutSection}
+                  skillsSection={skillsSection}
+                  projectsSection={projectsSection}
+                  contactsSection={contactsSection}
+                />
               </section>
+
               <section
                 className={styles.activeContent}
                 style={{ marginTop: pageOffset }}

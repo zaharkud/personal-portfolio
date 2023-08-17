@@ -20,12 +20,22 @@
   font-size: 0.88rem;
   cursor: default;
 }
-.project__content {
-  display: flex;
-  flex-direction: column;
-}
-.project__bottom {
-  margin-top: 40px;
+.project {
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__bottom {
+    margin-top: 40px;
+  }
+  &__top {
+    gap: 20px;
+  }
+  &__topRight {
+    & img {
+      border-radius: 15px;
+    }
+  }
 }
 
 .techStack {

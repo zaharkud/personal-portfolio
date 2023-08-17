@@ -1,5 +1,5 @@
 import styles from "./projects.module.scss";
-import projectImg from "assets/img/project-1.png";
+import projectImg from "assets/img/projects/project__01-01.png";
 import { Link } from "react-router-dom";
 
 export default function Skills() {

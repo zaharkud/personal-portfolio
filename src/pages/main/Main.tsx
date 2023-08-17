@@ -1,9 +1,9 @@
 import { useRef } from "react";
 
-import About from "pages/about/About";
-import Skills from "pages/skills/Skills";
-import Projects from "pages/projects/Projects";
-import Contacts from "pages/contacts/Contacts";
+import About from "pages/main/about/About";
+import Skills from "pages/main/skills/Skills";
+import Projects from "pages/main/projects/Projects";
+import Contacts from "pages/main/contacts/Contacts";
 import styles from "app.module.scss";
 
 interface IMainProps {

@@ -1,15 +1,6 @@
-@import "reset.module";
-
-@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@300;400;500;600;700;800&display=swap");
-
+@import "styles/reset.module";
+@import "styles/vars.module";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&display=swap");
-
-$main-beige: #f7ede8;
-$accent-red: #e3a2a2;
-$accent-grey: #e5e4e4;
-$text-grey: #949191;
 
 @font-face {
   font-family: "Arsinova Deco";
