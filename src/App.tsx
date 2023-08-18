@@ -4,10 +4,10 @@ import Project_01 from "pages/project_01/Project_01";
 import Main from "pages/main/Main";
 import { useRef, useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Sidebar from "components/Sidebar";
+import Sidebar from "components/Sidebar/Sidebar";
 
 function App() {
-  const sidebar = useRef<HTMLElement>(null);
+  const sidebar = useRef<HTMLDivElement>(null);
 
   const aboutSection = useRef<any>(null);
   const skillsSection = useRef<any>(null);
@@ -22,6 +22,7 @@ function App() {
   //создаем отступ сверху у контента такой же, как у сайдбара
   //отступ сайдбара изменяется автоматически в зависимости от высоты экрана
   useEffect(() => {
+    console.log(sidebar.current?.getBoundingClientRect().top);
     setPageOffset(sidebar.current?.getBoundingClientRect().top);
   }, [sidebar]);
 
@@ -93,15 +94,14 @@ function App() {
         <div className={styles.wrapper}>
           <div className={styles.container}>
             <div className={styles.content}>
-              <section className={styles.sidebar} ref={sidebar}>
-                <Sidebar
-                  handleMenuClick={handleMenuClick}
-                  aboutSection={aboutSection}
-                  skillsSection={skillsSection}
-                  projectsSection={projectsSection}
-                  contactsSection={contactsSection}
-                />
-              </section>
+              <Sidebar
+                handleMenuClick={handleMenuClick}
+                aboutSection={aboutSection}
+                skillsSection={skillsSection}
+                projectsSection={projectsSection}
+                contactsSection={contactsSection}
+                ref={sidebar}
+              />
 
               <section
                 className={styles.activeContent}
