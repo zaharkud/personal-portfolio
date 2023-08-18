@@ -1,6 +1,7 @@
 import styles from "./project_01.module.scss";
 import projectImgMockup from "assets/img/projects/project__01-01.png";
-import projectImgSnapshot_01 from "assets/img/projects/project__01-02.jpg";
+import projectImgSnapshot_01 from "assets/img/projects/project__01-02.png";
+import ProjectCard from "components/ProjectCard/ProjectCard";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -21,45 +22,37 @@ export default function Project_01() {
           </a>
           <p className={styles.projectInfo}>Проект 01 / 2023</p>
         </div>
-        <div className={styles.project__top}>
-          <div className={styles.project__topLeft}>
-            <img className={styles.img} src={projectImgMockup} />
-          </div>
-          <div className={styles.project__topRight}>
-            <img className={styles.img} src={projectImgSnapshot_01} />
-          </div>
-        </div>
+        <ProjectCard
+          projectImg={projectImgMockup}
+          projectType="ремонт-в-угличе.рф"
+        />
         <div className={styles.project__bottom}>
           <div className={styles.project__content}>
-            <h3 className={styles.title}>ARLEZU</h3>
-            <p className={styles.description}>
-              Начинающий веб-разработчик. Владею навыками проектирования
-              интерфейсов, вёрстки и работы с backend.
-            </p>
-            <p className={styles.description}>
-              Начинающий веб-разработчик. Владею навыками проектирования
-              интерфейсов, вёрстки и работы с backend.
-            </p>
-            <img className={styles.img} src={projectImgSnapshot_01} />
-            <p className={styles.description}>
-              Начинающий веб-разработчик. Владею навыкам-Mи проектирования
-              интерфейсов, вёрстки и работы с backend.
-            </p>
             <div className={styles.techStack}>
-              <article className={styles.techStack__item}>React</article>
               <article className={styles.techStack__item}>HTML</article>
-              <article className={styles.techStack__item}>SASS</article>
+              <article className={styles.techStack__item}>CSS / Sass</article>
+              <article className={styles.techStack__item}>JavaScript</article>
             </div>
             <p className={styles.description}>
-              Начинающий веб-разработчик. Владею навыкам-Mи проектирования
-              интерфейсов, вёрстки и работы с backend.
+              Сайт-визитка для строительной бригады в городе Углич.
             </p>
+            <p className={styles.description}>
+              Разработан дизайн сайта, логотип и айдентика. Сайт написан на
+              HTML, CSS и JavaScript без использования сторонних библиотек.
+            </p>
+            <img className={styles.contentImg} src={projectImgSnapshot_01} />
+            <p className={styles.description}>
+              Реализованы все необходимые разделы сайта: описание услуг,
+              прайс-лист с ценами, описание организации, портфолио с проектами и
+              контакты.
+            </p>
+
             <div className={styles.social}>
               <a href="#" className={styles.web}>
                 Открыть сайт
               </a>
               <a href="#" className={styles.github}>
-                Посетить GitHub проекта
+                GitHub проекта
               </a>
             </div>
           </div>

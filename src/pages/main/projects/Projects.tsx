@@ -1,27 +1,21 @@
 import styles from "./projects.module.scss";
 import projectImg from "assets/img/projects/project__01-01.png";
+import ProjectPromo from "components/ProjectPromo/ProjectPromo";
 import { Link } from "react-router-dom";
 
 export default function Skills() {
   return (
     <section className={styles.container}>
       <article className={styles.project}>
-        <div className={styles.project__top}>
-          <div className={styles.project__topLeft}>
-            <img className={styles.img} src={projectImg} />
-          </div>
-          <div className={styles.project__topRight}>
-            <p className={styles.projectType}>сайт-визитка</p>
-          </div>
-        </div>
+        <ProjectPromo projectImg={projectImg} projectLink="/project_01" />
         <div className={styles.project__bottom}>
           <div className={styles.techStack}>
-            <article className={styles.techStack__item}>React</article>
             <article className={styles.techStack__item}>HTML</article>
-            <article className={styles.techStack__item}>SASS</article>
+            <article className={styles.techStack__item}>CSS / Scss</article>
+            <article className={styles.techStack__item}>JavaScript</article>
           </div>
-          <Link to="/project_01" preventScrollReset={true}>
-            <h3 className={styles.title}>ARLEZU - Изучение армянского</h3>
+          <Link to="/project_01">
+            <h3 className={styles.title}>Сайт-визитка строительной бригады</h3>
           </Link>
           <p className={styles.description}>
             Начинающий веб-разработчик. Владею навыками проектирования
@@ -30,14 +24,7 @@ export default function Skills() {
         </div>
       </article>
       <article className={styles.project}>
-        <div className={styles.project__top}>
-          <div className={styles.project__topLeft}>
-            <img className={styles.img} src={projectImg} />
-          </div>
-          <div className={styles.project__topRight}>
-            <p className={styles.projectType}>сайт-визитка</p>
-          </div>
-        </div>
+        <ProjectPromo projectImg={projectImg} projectLink="сайт-визитка" />
         <div className={styles.project__bottom}>
           <div className={styles.techStack}>
             <article className={styles.techStack__item}>React</article>

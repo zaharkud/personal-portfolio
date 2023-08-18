@@ -4,39 +4,37 @@ export default function Skills() {
   return (
     <section className={styles.container}>
       <article className={styles.category}>
-        <h3 className={styles.title}>FRAMEWORKS</h3>
+        <h3 className={styles.title}>Языки</h3>
         <ul className={styles.list}>
-          <li>React</li>
-          <li>Jekyll</li>
-          <li>Node</li>
-          <li>CSS/Sass</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>React</li>
+          <li>HTML</li>
+          <li>CSS / Sass</li>
+          <li>JavaScript</li>
         </ul>
       </article>
       <article className={styles.category}>
-        <h3 className={styles.title}>FRAMEWORKS</h3>
+        <h3 className={styles.title}>Фреймворки и библиотеки</h3>
         <ul className={styles.list}>
-          <li>React</li>
-          <li>Jekyll</li>
-          <li>Node</li>
-          <li>CSS/Sass</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>React</li>
+          <li>React + Redux</li>
+          <li>NodeJS / Express</li>
         </ul>
       </article>
       <article className={styles.category}>
-        <h3 className={styles.title}>FRAMEWORKS</h3>
+        <h3 className={styles.title}>Опыт работы</h3>
         <ul className={styles.list}>
-          <li>React</li>
-          <li>Jekyll</li>
-          <li>Node</li>
-          <li>CSS/Sass</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>React</li>
+          <li>GIT</li>
+          <li>JEST</li>
+          <li>SQL / Postgres</li>
+          <li>VPS / Linux</li>
+        </ul>
+      </article>
+      <article className={styles.category}>
+        <h3 className={styles.title}>Программы</h3>
+        <ul className={styles.list}>
+          <li>VS Code</li>
+          <li>Figma</li>
+          <li>PgAdmin</li>
+          <li>Adobe Photoshop</li>
+          <li>Postman</li>
         </ul>
       </article>
     </section>

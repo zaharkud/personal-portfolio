@@ -4,5 +4,30 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 120px;
+}
+.title {
+  font-size: 1.11rem;
+  margin-top: 25px;
+  color: black;
+  display: inline-block;
+  position: relative;
+  &::after {
+    content: "";
+    transition: all 0.5s;
+  }
+  &:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+}
+.description {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: $text-grey;
 }

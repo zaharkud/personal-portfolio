@@ -1,0 +1,25 @@
+@import "styles/vars.module.scss";
+
+.projectCard {
+  background-color: $accent-grey;
+  border-radius: $border-radius;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  &__img {
+    flex: 0 0 60%;
+    margin-left: -60px;
+  }
+  &__description {
+    font-family: "Arsinova Deco", sans-serif;
+    letter-spacing: 5px;
+    line-height: 100%;
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    & a {
+      color: $text-grey;
+    }
+  }
+}

@@ -36,6 +36,23 @@ function App() {
     }
   }, [linkData]);
 
+  //удаляем сайдбар на странице проекта при ширине меньше 900
+  useEffect(() => {
+    if (
+      linkData.pathname != "/" &&
+      sidebar.current?.style.display != undefined &&
+      window.matchMedia("(max-width: 900px)").matches
+    ) {
+      sidebar.current.style.display = "none";
+    }
+    if (
+      window.matchMedia("(min-width: 900px)").matches &&
+      sidebar.current?.style.display != undefined
+    ) {
+      sidebar.current.style.display = "block";
+    }
+  }, [linkData]);
+
   //! РЕШИТЬ ПРОБЛЕМУ С SWITCH-CASE
   //плавный переход у нужному разделу основной страницы
   function handleMenuClick(section: any): void {

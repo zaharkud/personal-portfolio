@@ -8,20 +8,21 @@ export default function Contacts() {
       <p className={styles.description}>
         Давайте вместе сделаем что-нибудь интересное. Просто напишите мне ^-^
       </p>
-      <a className={styles.email} href="email:zaharkud162@gmail.com">
+      <a className={styles.email} href="mailto:zaharkud162@gmail.com">
         zaharkud162@gmail.com
       </a>
-      <a className={styles.btnRight}>
-        написать<span></span>
-      </a>
+
       <div className={styles.social}>
         <p className={styles.social__item}>
-          <a href="#">@Keere</a> в telegram
+          <a href="https://t.me/zarkydd">@zarkydd</a> в telegram
         </p>
         <p className={styles.social__item}>
-          <a href="#">@zaharkud</a> на github
+          <a href="https://github.com/zaharkud">@zaharkud</a> на github
         </p>
       </div>
+      <a href="https://t.me/zarkydd" className={styles.btnRight}>
+        написать<span></span>
+      </a>
     </section>
   );
 }
