@@ -2,7 +2,7 @@ name: GitHub Actions
 run-name: Personal Portfolio Project - running actions
 on: [push]
 jobs:
-  init:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
