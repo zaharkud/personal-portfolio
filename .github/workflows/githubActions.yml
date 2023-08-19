@@ -1,6 +1,10 @@
 name: GitHub Actions
 run-name: Personal Portfolio Project - running actions
-on: [push]
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   init:
