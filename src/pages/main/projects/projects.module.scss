@@ -12,25 +12,27 @@
   color: black;
   display: inline-block;
   position: relative;
-  text-decoration: underline 1px rgba(0, 0, 0, 0);
+  /* text-decoration: underline 1px rgba(0, 0, 0, 0);
   text-underline-position: under;
   transition: text-decoration 0.3s;
   &:hover {
     text-decoration-color: black;
-  }
-  /* &::after {
-    content: "";
-    transition: all 0.5s;
-  }
-  &:hover::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: black;
   } */
+  @media (min-width: 900px) {
+    &::after {
+      content: "";
+      transition: all 0.5s;
+    }
+    &:hover::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+    }
+  }
 }
 .description {
   margin-top: 15px;

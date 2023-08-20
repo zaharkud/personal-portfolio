@@ -20,7 +20,7 @@ export default function Project_01() {
           <a onClick={goBack} className={styles.btnLeft}>
             <span></span>назад
           </a>
-          <p className={styles.projectInfo}>Проект 01 / 2023</p>
+          <p className={styles.projectInfo}>01 / 2023</p>
         </div>
         <ProjectCard
           projectImg={projectImgMockup}
