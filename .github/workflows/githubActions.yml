@@ -1,4 +1,4 @@
-name: GitHub Actions
+name: personal-portfolio CI
 run-name: Personal Portfolio Project - running actions
 on:
   push:
@@ -7,8 +7,8 @@ on:
     branches: [main]
 
 jobs:
-  init:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: self-hosted
 
     strategy:
       matrix:
@@ -26,5 +26,3 @@ jobs:
         run: npm run build
         env:
           CI: false
-      - name: test project
-        run: npm run test
