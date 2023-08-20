@@ -1,5 +1,5 @@
 import styles from "./projects.module.scss";
-import projectImg from "assets/img/projects/project__01-01.png";
+import projectImg from "assets/img/projects/project__01-01.webp";
 import ProjectPromo from "components/ProjectPromo/ProjectPromo";
 import { Link } from "react-router-dom";
 
