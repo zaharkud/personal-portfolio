@@ -22,8 +22,10 @@ function App() {
   //создаем отступ сверху у контента такой же, как у сайдбара
   //отступ сайдбара изменяется автоматически в зависимости от высоты экрана
   useEffect(() => {
-    console.log(sidebar.current?.getBoundingClientRect().top);
-    setPageOffset(sidebar.current?.getBoundingClientRect().top);
+    if (window.matchMedia("(min-width: 900px)").matches) {
+      console.log(sidebar.current?.getBoundingClientRect().top);
+      setPageOffset(sidebar.current?.getBoundingClientRect().top);
+    }
   }, [sidebar]);
 
   //вешаем обработчик перехода к нужному раздела основной страницы с другой страницы
@@ -40,19 +42,20 @@ function App() {
   //удаляем сайдбар на странице проекта при ширине меньше 900
   useEffect(() => {
     if (
-      linkData.pathname != "/" &&
+      linkData.pathname !== "/" &&
       sidebar.current?.style.display != undefined &&
       window.matchMedia("(max-width: 900px)").matches
     ) {
+      console.log("none");
       sidebar.current.style.display = "none";
     }
     if (
-      window.matchMedia("(min-width: 900px)").matches &&
+      linkData.pathname === "/" &&
       sidebar.current?.style.display != undefined
     ) {
-      sidebar.current.style.display = "block";
+      sidebar.current.style.display = "flex";
     }
-  }, [linkData]);
+  }, [linkData.pathname]);
 
   //! РЕШИТЬ ПРОБЛЕМУ С SWITCH-CASE
   //плавный переход у нужному разделу основной страницы

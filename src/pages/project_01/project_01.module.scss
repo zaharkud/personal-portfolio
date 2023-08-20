@@ -81,10 +81,16 @@
   padding-left: 35px;
   display: flex;
   color: black;
-  transition: all 0.3s;
   position: relative;
   display: inline-block;
-  &::after {
+
+  text-decoration: underline 1px rgba(0, 0, 0, 0) !important;
+  text-underline-position: under;
+  transition: text-decoration 0.3s;
+  &:hover {
+    text-decoration-color: black !important;
+  }
+  /* &::after {
     content: "";
     transition: all 0.5s;
   }
@@ -96,7 +102,7 @@
     width: calc(100% - 35px);
     height: 1px;
     background-color: black;
-  }
+  } */
 }
 .github {
   background: url("../../assets/img/social/github.svg") 0 0/22px 22px no-repeat;
