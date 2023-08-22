@@ -30,8 +30,7 @@ const Sidebar = forwardRef<SidebarRefType, ISidebarTypes>(
             <div className={styles.logo}></div>
             <h2 className={styles.title}>Junior Frontend Developer</h2>
             <p className={styles.description}>
-              Начинающий веб-разработчик. Владею навыками проектирования
-              интерфейсов, вёрстки и работы с backend.
+              Начинающий веб-разработчик на React
             </p>
           </section>
           <nav>
