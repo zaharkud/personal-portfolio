@@ -5,6 +5,7 @@ import Main from "pages/main/Main";
 import { useRef, useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Sidebar from "components/Sidebar/Sidebar";
+import Project_02 from "pages/project_02/project_02";
 
 function App() {
   const sidebar = useRef<HTMLDivElement>(null);
@@ -123,6 +124,7 @@ function App() {
                     }
                   />
                   <Route path="/project_01" element={<Project_01 />} />
+                  <Route path="/project_02" element={<Project_02 />} />
                   <Route
                     path="*"
                     element={

@@ -1,3 +1,123 @@
+@import "./vars.module.scss";
+
+.project__menu {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & > :first-child {
+    flex: 0 0 50%;
+  }
+}
+.backBtn {
+}
+.projectInfo {
+  border: 1px solid $text-grey;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: $text-grey;
+  font-size: 0.88rem;
+  cursor: default;
+}
+.project {
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__bottom {
+    margin-top: 10px;
+  }
+  &__top {
+    gap: 20px;
+  }
+  &__topRight {
+    & img {
+      border-radius: 15px;
+    }
+  }
+  @media (max-width: 900px) {
+    margin-top: 50px;
+  }
+}
+.description {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.contentImg {
+  margin: 30px 0 45px 0;
+  max-width: 90%;
+}
+
+.techStack {
+  margin: 15px 0 50px 0;
+}
+.title {
+  font-size: 2.8rem;
+  font-family: "Arsinova Deco", sans-serif;
+  letter-spacing: 5px;
+  line-height: 100%;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+}
+.container {
+  max-width: 35vw;
+  @media (max-width: 1400px) {
+    max-width: 45vw;
+  }
+  @media (max-width: 900px) {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 50px;
+  margin: 50px 0 70px 0;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 30px;
+  }
+}
+.social > * {
+  padding-left: 35px;
+  display: flex;
+  color: black;
+  position: relative;
+
+  transition: all 0.3s;
+
+  /* text-decoration: underline 1px rgba(0, 0, 0, 0) !important;
+  text-underline-position: under;
+  transition: text-decoration 0.3s;
+  &:hover {
+    text-decoration-color: black !important;
+  } */
+  @media (min-width: 900px) {
+    &::after {
+      content: "";
+      transition: all 0.5s;
+    }
+    &:hover::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      right: 0;
+      width: calc(100% - 35px);
+      height: 1px;
+      background-color: black;
+    }
+  }
+}
+.github {
+  background: url("../assets/img/social/github.svg") 0 0/22px 22px no-repeat;
+}
+.web {
+  background: url("../assets/img/social/web.svg") 0 0/22px 22px no-repeat;
+}
+
 .techStack {
   display: flex;
   gap: 7px;

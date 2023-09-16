@@ -1,11 +1,11 @@
 import styles from "styles/projectCommon.module.scss";
-import projectImgMockup from "assets/img/projects/project__01-01.webp";
+import projectImgMockup from "assets/img/projects/project__02-01.webp";
 import projectImgSnapshot_01 from "assets/img/projects/project__01-02.webp";
 import ProjectCard from "components/ProjectCard/ProjectCard";
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function Project_01() {
+export default function Project_02() {
   const navigate = useNavigate();
   const goBack = () => navigate(-1);
 
@@ -20,18 +20,18 @@ export default function Project_01() {
           <a onClick={goBack} className={styles.btnLeft}>
             <span></span>назад
           </a>
-          <p className={styles.projectInfo}>01 / 2023</p>
+          <p className={styles.projectInfo}>02 / 2023</p>
         </div>
         <ProjectCard
           projectImg={projectImgMockup}
-          projectType="remont-uglich.ru"
+          projectType="arlezu.ru"
         />
         <div className={styles.project__bottom}>
           <div className={styles.project__content}>
             <div className={styles.techStack}>
-              <article className={styles.techStack__item}>HTML</article>
-              <article className={styles.techStack__item}>CSS / Sass</article>
-              <article className={styles.techStack__item}>JavaScript</article>
+              <article className={styles.techStack__item}>React</article>
+              <article className={styles.techStack__item}>SCSS</article>
+              <article className={styles.techStack__item}>TypeScript</article>
             </div>
             <p className={styles.description}>
               Сайт-визитка для строительной бригады в городе Углич.

@@ -4,7 +4,7 @@ import projectImg__02 from "assets/img/projects/project__02-01.webp";
 import ProjectPromo from "components/ProjectPromo/ProjectPromo";
 import { Link } from "react-router-dom";
 
-export default function Skills() {
+export default function Projects() {
   return (
     <section className={styles.container}>
       <article className={styles.project}>
@@ -25,7 +25,7 @@ export default function Skills() {
         </div>
       </article>
       <article className={styles.project}>
-        <ProjectPromo projectImg={projectImg__02} projectLink="сайт-визитка" />
+        <ProjectPromo projectImg={projectImg__02} projectLink="/project_02" />
         <div className={styles.project__bottom}>
           <div className={styles.techStack}>
             <article className={styles.techStack__item}>React</article>
@@ -33,7 +33,9 @@ export default function Skills() {
             <article className={styles.techStack__item}>SASS</article>
           </div>
           <div className={styles.project__content}>
-            <h3 className={styles.title}>ARLEZU - Изучение армянского</h3>
+            <Link to="/project_02">
+              <h3 className={styles.title}>ARLEZU - Изучение армянского</h3>
+            </Link>
             <p className={styles.description}>
               Приложение по изучению армянского языка. Упор сделан на
               запоминание слов через визуальные образы
