@@ -1,6 +1,6 @@
 import styles from "styles/projectCommon.module.scss";
 import projectImgMockup from "assets/img/projects/project__02-01.webp";
-import projectImgSnapshot_01 from "assets/img/projects/project__01-02.webp";
+import projectImgSnapshot_01 from "assets/img/projects/project__02-02.webp";
 import ProjectCard from "components/ProjectCard/ProjectCard";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
