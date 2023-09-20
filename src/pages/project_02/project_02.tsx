@@ -30,21 +30,20 @@ export default function Project_02() {
           <div className={styles.project__content}>
             <div className={styles.techStack}>
               <article className={styles.techStack__item}>React</article>
-              <article className={styles.techStack__item}>SCSS</article>
               <article className={styles.techStack__item}>TypeScript</article>
+              <article className={styles.techStack__item}>SCSS</article>
+              <article className={styles.techStack__item}>Redux Toolkit</article>
+              <article className={styles.techStack__item}>JWT</article>
             </div>
             <p className={styles.description}>
-              Сайт-визитка для строительной бригады в городе Углич.
+              Веб-приложение по изучению армянского языка.
             </p>
             <p className={styles.description}>
-              Разработан дизайн сайта, логотип и айдентика. Сайт написан на
-              HTML, CSS и JavaScript без использования сторонних библиотек.
+              Разработан дизайн сайта, приложение написано на React и продолжает разрабатываться, дополняясь новыми функциями.
             </p>
             <img className={styles.contentImg} src={projectImgSnapshot_01} />
             <p className={styles.description}>
-              Реализованы все необходимые разделы сайта: описание услуг,
-              прайс-лист с ценами, описание организации, портфолио с проектами и
-              контакты.
+              На данный момент реализованы необходимые элементы для изучения и повторения лексики, подготовлены разделы для загрузки уроков по грамматике.
             </p>
 
             <div className={styles.social}>

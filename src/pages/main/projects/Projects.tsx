@@ -29,8 +29,8 @@ export default function Projects() {
         <div className={styles.project__bottom}>
           <div className={styles.techStack}>
             <article className={styles.techStack__item}>React</article>
-            <article className={styles.techStack__item}>HTML</article>
-            <article className={styles.techStack__item}>SASS</article>
+            <article className={styles.techStack__item}>TypeScript</article>
+            <article className={styles.techStack__item}>SCSS</article>
           </div>
           <div className={styles.project__content}>
             <Link to="/project_02">
