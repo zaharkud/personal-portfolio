@@ -41,7 +41,7 @@ export default function Project_02() {
             <p className={styles.description}>
               Разработан дизайн сайта, приложение написано на React и продолжает разрабатываться, дополняясь новыми функциями.
             </p>
-            <img className={styles.contentImg} src={projectImgSnapshot_01} />
+            <img className={styles.contentImg} src={projectImgSnapshot_01} alt="Страницы сайта"/>
             <p className={styles.description}>
               На данный момент реализованы необходимые элементы для изучения и повторения лексики, подготовлены разделы для загрузки уроков по грамматике.
             </p>
