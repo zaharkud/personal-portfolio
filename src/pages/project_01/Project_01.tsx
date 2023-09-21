@@ -40,7 +40,7 @@ export default function Project_01() {
               Разработан дизайн сайта, логотип и айдентика. Сайт написан на
               HTML, CSS и JavaScript без использования сторонних библиотек.
             </p>
-            <img className={styles.contentImg} src={projectImgSnapshot_01} />
+            <img className={styles.contentImg} src={projectImgSnapshot_01} alt="Страницы сайта"/>
             <p className={styles.description}>
               Реализованы все необходимые разделы сайта: описание услуг,
               прайс-лист с ценами, описание организации, портфолио с проектами и
