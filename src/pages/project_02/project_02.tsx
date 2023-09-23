@@ -47,10 +47,10 @@ export default function Project_02() {
             </p>
 
             <div className={styles.social}>
-              <a href="#" className={styles.web}>
+              <a href="https://arlezu.ru/" className={styles.web}>
                 Открыть сайт
               </a>
-              <a href="#" className={styles.github}>
+              <a href="https://github.com/zaharkud/arlezu-frontend/" className={styles.github}>
                 GitHub проекта
               </a>
             </div>
