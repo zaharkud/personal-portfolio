@@ -17,7 +17,7 @@ export default function ProjectCard({
         <img src={projectImg} alt="Скриншот сайта проекта"/>
       </div>
       <div className={styles.projectCard__description}>
-        <a href={projectLink}>{projectType}</a>
+        <a href={projectLink} target="_blank" rel="noreferrer">{projectType}</a>
       </div>
     </div>
   );

@@ -48,10 +48,10 @@ export default function Project_01() {
             </p>
 
             <div className={styles.social}>
-              <a href="https://remont-uglich.ru/" className={styles.web}>
+              <a href="https://remont-uglich.ru/" target="_blank" rel="noreferrer" className={styles.web}>
                 Открыть сайт
               </a>
-              <a href="https://github.com/zaharkud/construction-team/" className={styles.github}>
+              <a href="https://github.com/zaharkud/construction-team/" target="_blank" rel="noreferrer" className={styles.github}>
                 GitHub проекта
               </a>
             </div>
