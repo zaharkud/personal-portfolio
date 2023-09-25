@@ -15,7 +15,7 @@ export default function Skills() {
         <h3 className={styles.title}>Фреймворки и библиотеки</h3>
         <ul className={styles.list}>
           <li>React + Redux</li>
-          <li>NodeJS / Express</li>
+          <li>NodeJS / Express (База)</li>
         </ul>
       </article>
       <article className={styles.category}>
@@ -24,7 +24,7 @@ export default function Skills() {
           <li>GIT</li>
           <li>JEST</li>
           <li>SQL / Postgres</li>
-          <li>VPS / Linux</li>
+          <li>VPS / Ubuntu</li>
         </ul>
       </article>
       <article className={styles.category}>
@@ -34,7 +34,6 @@ export default function Skills() {
           <li>Figma</li>
           <li>PgAdmin</li>
           <li>Adobe Photoshop</li>
-          <li>Postman</li>
         </ul>
       </article>
     </section>
