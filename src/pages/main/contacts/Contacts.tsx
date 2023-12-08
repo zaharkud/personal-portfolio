@@ -14,13 +14,28 @@ export default function Contacts() {
 
       <div className={styles.social}>
         <p className={styles.social__item}>
-          <a href="https://t.me/zarkydd">@zarkydd</a> в telegram
+          <a href="https://t.me/zarkydd" target="_blank" rel="noreferrer">
+            @zarkydd
+          </a>
+          в telegram
         </p>
         <p className={styles.social__item}>
-          <a href="https://github.com/zaharkud">@zaharkud</a> на github
+          <a
+            href="https://github.com/zaharkud"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @zaharkud
+          </a>
+          на github
         </p>
       </div>
-      <a href="https://t.me/zarkydd" className={styles.btnRight}>
+      <a
+        href="https://t.me/zarkydd"
+        className={styles.btnRight}
+        target="_blank"
+        rel="noreferrer"
+      >
         написать<span></span>
       </a>
     </section>
