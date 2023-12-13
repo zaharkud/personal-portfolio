@@ -16,7 +16,7 @@ export default function Contacts() {
         <p className={styles.social__item}>
           <a href="https://t.me/zarkydd" target="_blank" rel="noreferrer">
             @zarkydd
-          </a>
+          </a>{" "}
           в telegram
         </p>
         <p className={styles.social__item}>
@@ -26,7 +26,7 @@ export default function Contacts() {
             rel="noreferrer"
           >
             @zaharkud
-          </a>
+          </a>{" "}
           на github
         </p>
       </div>
