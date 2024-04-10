@@ -4,26 +4,22 @@ export default function Skills() {
   return (
     <section className={styles.container}>
       <article className={styles.category}>
-        <h3 className={styles.title}>Языки</h3>
-        <ul className={styles.list}>
-          <li>HTML</li>
-          <li>CSS / Sass</li>
-          <li>JavaScript</li>
-        </ul>
-      </article>
-      <article className={styles.category}>
-        <h3 className={styles.title}>Фреймворки и библиотеки</h3>
+        <h3 className={styles.title}>Языки и технологии</h3>
         <ul className={styles.list}>
           <li>React</li>
-          <li>NodeJS / Express (База)</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS / Sass</li>
         </ul>
       </article>
       <article className={styles.category}>
         <h3 className={styles.title}>Опыт работы</h3>
         <ul className={styles.list}>
-          <li>GIT</li>
+          <li>NodeJS / Express</li>
+          <li>Vue / Nuxt / Pinia</li>
           <li>SQL / Postgres</li>
           <li>VPS / Ubuntu</li>
+          <li>GIT</li>
         </ul>
       </article>
       <article className={styles.category}>
