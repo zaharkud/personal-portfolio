@@ -6,7 +6,7 @@ export default function Skills() {
       <article className={styles.category}>
         <h3 className={styles.title}>Языки и технологии</h3>
         <ul className={styles.list}>
-          <li>React</li>
+          <li>Vue / Nuxt</li>
           <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS / Sass</li>
@@ -15,9 +15,8 @@ export default function Skills() {
       <article className={styles.category}>
         <h3 className={styles.title}>Опыт работы</h3>
         <ul className={styles.list}>
-          <li>NodeJS / Express</li>
-          <li>Vue / Nuxt / Pinia</li>
-          <li>SQL / Postgres</li>
+          <li>React</li>
+          <li>Python</li>
           <li>VPS / Ubuntu</li>
           <li>GIT</li>
         </ul>
@@ -27,8 +26,6 @@ export default function Skills() {
         <ul className={styles.list}>
           <li>VS Code</li>
           <li>Figma</li>
-          <li>PgAdmin</li>
-          <li>Postman</li>
           <li>Adobe Photoshop</li>
         </ul>
       </article>
